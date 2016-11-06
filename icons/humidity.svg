@@ -9,12 +9,12 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="744.09448819"
-   height="1052.3622047"
+   width="27.263981"
+   height="40.324001"
    id="svg2"
    version="1.1"
    inkscape:version="0.48.2 r9819"
-   sodipodi:docname="Nuovo documento 1">
+   sodipodi:docname="humidity.svg">
   <defs
      id="defs4" />
   <sodipodi:namedview
@@ -25,8 +25,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="8.5228464"
-     inkscape:cx="302.87511"
-     inkscape:cy="494.35399"
+     inkscape:cx="27.50097"
+     inkscape:cy="17.373138"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -34,7 +34,11 @@
      inkscape:window-height="753"
      inkscape:window-x="-4"
      inkscape:window-y="-4"
-     inkscape:window-maximized="1" />
+     inkscape:window-maximized="1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
   <metadata
      id="metadata7">
     <rdf:RDF>
@@ -50,7 +54,8 @@
   <g
      inkscape:label="Livello 1"
      inkscape:groupmode="layer"
-     id="layer1">
+     id="layer1"
+     transform="translate(-275.37414,-535.05733)">
     <path
        style="fill:#749bac;fill-opacity:1;stroke:#759baa;stroke-width:1.50721061;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 293.77411,560.55973 c 0,0 -0.40046,0.97799 -1.57741,3.12186 -0.76817,1.39926 -1.88697,3.02108 -1.56167,4.1027 0.76947,2.55847 5.07974,3.87038 6.26102,-0.0573 0.32391,-1.07696 -0.72155,-2.33098 -1.49104,-3.79204 -1.1874,-2.25458 -1.6309,-3.37522 -1.6309,-3.37522 z"
