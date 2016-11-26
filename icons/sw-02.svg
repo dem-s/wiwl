@@ -14,7 +14,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.2 r9819"
-   sodipodi:docname="Nuovo documento 1">
+   sodipodi:docname="sw-02.svg">
   <defs
      id="defs4" />
   <sodipodi:namedview
@@ -34,7 +34,9 @@
      inkscape:window-height="753"
      inkscape:window-x="-4"
      inkscape:window-y="-4"
-     inkscape:window-maximized="1" />
+     inkscape:window-maximized="1"
+     inkscape:snap-center="true"
+     inkscape:snap-page="true" />
   <metadata
      id="metadata7">
     <rdf:RDF>
@@ -54,7 +56,7 @@
      transform="translate(0,-1001.3622)" />
   <path
      style="fill:none;stroke:#2f54df;stroke-width:2.06698585;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
-     d="m 24.025179,11.584317 c -5.845734,1.310859 -10.227272,6.505116 -10.227272,12.746413 0,7.229612 5.861295,13.090909 13.090909,13.090909 5.235891,0 9.748467,-3.072646 11.842105,-7.514354 -1.173869,0.360372 -2.432885,0.538277 -3.72488,0.538277 -6.97705,0 -12.638757,-5.640174 -12.638757,-12.617224 0,-2.268837 0.610763,-4.403638 1.657895,-6.244021 z"
+     d="m 21.731556,13.21421 c -5.845734,1.310859 -10.227272,6.505116 -10.227272,12.746413 0,7.229612 5.861295,13.090909 13.090909,13.090909 5.235891,0 9.748467,-3.072646 11.842105,-7.514354 -1.173869,0.360372 -2.432885,0.538277 -3.72488,0.538277 -6.97705,0 -12.638757,-5.640174 -12.638757,-12.617224 0,-2.268837 0.610763,-4.403638 1.657895,-6.244021 z"
      id="path3981"
      inkscape:connector-curvature="0" />
 </svg>
