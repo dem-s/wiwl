@@ -24,9 +24,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="3.0132812"
-     inkscape:cx="14.02867"
-     inkscape:cy="64.893349"
+     inkscape:zoom="6.0265625"
+     inkscape:cx="20.966792"
+     inkscape:cy="40.55697"
      inkscape:document-units="px"
      inkscape:current-layer="g4100"
      showgrid="false"
@@ -69,7 +69,7 @@
          sodipodi:nodetypes="csssssc" />
       <path
          sodipodi:nodetypes="csssssc"
-         style="fill:none;stroke:#000000;stroke-width:3.22890997;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         style="fill:none;stroke:#2f54df;stroke-width:3.22890997000000010;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
          d="m 2.3204133,16.877466 c 0,0 5.5471683,-2.35917 8.4730587,-2.299342 2.544694,0.05203 4.736052,2.287465 7.281251,2.299342 2.404259,0.01122 4.49376,-2.117306 6.898026,-2.10773 2.343259,0.0093 4.363159,2.11756 6.706415,2.10773 2.282406,-0.0096 4.233551,-2.180898 6.514804,-2.10773 1.90738,0.06118 5.322974,2.10773 5.322974,2.10773"
          id="path4137"
          inkscape:connector-curvature="0" />
@@ -83,7 +83,7 @@
          inkscape:connector-curvature="0"
          id="path4141"
          d="m 2.3204133,30.098684 c 0,0 5.5471683,-2.35917 8.4730587,-2.299342 2.544694,0.05203 4.736052,2.287465 7.281251,2.299342 2.404259,0.01122 4.49376,-2.117306 6.898026,-2.10773 2.343259,0.0093 4.363159,2.11756 6.706415,2.10773 2.282406,-0.0096 4.233551,-2.180898 6.514804,-2.10773 1.90738,0.06118 5.322974,2.10773 5.322974,2.10773"
-         style="fill:none;stroke:#000000;stroke-width:3.22890997;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         style="fill:none;stroke:#2f54df;stroke-width:3.22890997000000010;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
          sodipodi:nodetypes="csssssc" />
     </g>
   </g>
