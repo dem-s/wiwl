@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html class="lang="en"">
+<head>
+	<meta charset="UTF-8">
+	<title>wiwl - weather app</title>
+  
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Share+Tech" rel="stylesheet"> 
+
+
+
+
+	<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+	<link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+  
+	<div class="appCont">
+
+		<header>
+			<h2><strong>W</strong>hat <strong>i</strong>s <strong>W</strong>eather<strong> L</strong>ike</h2>
+		</header>
+
+		<div class="location">
+			<div id="cityNameCont">				
+				<div class="locationCont">
+					<div class="gettingPos"><span id="localizer">click to get your position </span><span id="compass" class="fa fa-compass"></span></div>
+				</div> 
+			</div>
+		</div>
+
+		<div class="weather">
+			<div id="weatherNow">
+				<h2 id='fallback'>search the desired location</h2>
+				<div class='box'>
+					<div class='container-1'>
+						<input type='text' class='search' placeholder='enter city name...' autocomplete="off">
+						<span class='icon'>
+							<i class='fa fa-search searchCompass'></i>
+						</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="currValue">
+				<div class="p l" id="tempCont">
+					
+				</div>
+				<div class="p r" id="igromCont">
+					
+				</div>
+        <div class="p l" id="baromCont">
+					
+				</div>
+				<div class="p r" id="anemomCont">
+					
+				</div>
+			</div>
+
+			<div class="forecast">
+				<div class="l" id="day1">
+					<p id="dayPlus1">
+						<small class="time" id="timePlus1"></small>
+						<br>
+						<small id="tempPlus1"></small>
+						<br>
+						
+					</p>
+					<p id="dayPlus1_2">
+						<small class="time" id="timePlus1_2"></small>
+						<br>
+						<small id="tempPlus1_2"></small>
+						<br>
+						
+					</p>
+				</div>
+				
+				<div class="l" id="day2">
+					<p id="dayPlus2">
+						<small class="time" id="timePlus2"></small>
+						<br>
+						<small id="tempPlus2"></small>
+						<br>
+						
+					</p>
+					<p id="dayPlus2_2">
+						<small class="time" id="timePlus2_2"></small>
+						<br>
+						<small id="tempPlus2_2"></small>
+						<br>
+					</p>
+				</div>
+				
+				<div class="r" id="day3">
+					<p id="dayPlus3">
+						<small class="time" id="timePlus3"></small>
+						<br>
+						<small id="tempPlus3"></small>
+						<br>
+						
+					</p>
+					<p id="dayPlus3_2">
+						<small class="time" id="timePlus3_2"></small>
+						<br>
+						<small id="tempPlus3_2"></small>
+						<br>
+						
+					</p>
+				</div>
+				
+				<div class="r" id="day4">
+					<p id="dayPlus4">
+						<small class="time" id="timePlus4"></small>
+						<br>
+						<small id="tempPlus4"></small>
+						<br>
+						
+					</p>
+					<p id="dayPlus4_2">
+						<small class="time" id="timePlus4_2"></small>
+						<br>
+						<small id="tempPlus4_2"></small>
+						<br>
+						
+					</p>
+				</div>
+			</div>
+
+		</div>
+
+
+
+	</div>
+
+	<div class="button">
+	
+		<a class="btn fa fa-info-circle" id="info" data-toggle="modal" data-target="#infoModal"></a>
+			
+			<!-- INFO MODAL -->
+			<div id="infoModal" class="modal fade infoModal" tabindex="-1">
+				<div class="modal-dialog modal-lg">
+					<div class="modal-content">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h3>How does it work:</h3>
+						<p>The <span>WIWL</span> app gives you the current weather and the temperature (you can easily toggle between Celsius and Fahrenheit with the switch at the bottom of the app), humidity and wind values and also provides a 4-days weather forecast for the desired location.</p>
+						<p>The app will ask your permission to use your current location.<br> If you deny the permission, or if your device does not support the Geolocation API, you will be able to search the desired place name<!-- or the geographic coordinates-->.<br> To obtain updated weather info, or to search the weather for another place, you have to click on the refresh icon at the bottom of the window.<br>The app's icons are based on the 'Simple Weather Icons' library by <a href="http://www.danvierich.de/weather/" target="_blank">Daniel Vierich</a><br>The background image is courtesy of <a href="" target="_blank">Picture author</a><br><br>Weather data source: <a href="https://openweathermap.org/api" target="_blank"><img id="owmIcon" src="https://raw.githubusercontent.com/dem-s/wiwl/master/icons/owmIcon.png" alt="">OpenWeatherMap</a></p>
+						<p class="text-center"><em>I hope you will enjoy it!</em></p>
+					</div>
+				</div>
+			</div>
+			<!-- END OF INFO MODAL -->
+			
+		<label class="tempSwitch">
+			<input id="tempSwitcher" type="checkbox">
+			<span class="slider round"></span>
+		</label>
+
+		<a class="btn fa fa-refresh" id="newSearch"></a>
+		
+	</div>
+
+
+
+	<!-- CONFIRM GEOLOCATION MODAL -->
+	<div id="confirmModal" class="modal fade infoModal" tabindex="-1">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<h3>Can we localize you?</h3>
+				<p>The <span>WIWL</span> app can use the Geolocation API to get your current position with only two more click of your mouse.</p>
+				<p>If you click on the 'OK' button, your browser will ask you if you would like to share your location with the app; you have to allow it.</p>
+				<p>If you click on the 'Nope' button or if you close this message you will be brought back to the app and you will need to type the desired location name in the search box and click on the compass to get the local weather.</p>
+				<p>In both cases you have just to wait few moments to get your weather info.</p>
+				<p>
+					<button class="btn btn-default col-xs-3 col-xs-offset-2 confirmGeolocation">OK</button>
+					<button class="btn btn-danger col-xs-3 col-xs-offset-2" id="dismissGeolocation">Nope</button>
+				</p>
+
+
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<footer>
+		<span>&copy; 2016 <a href="https://codepen.io/dem-s" target="_blank">dem-s</a> - All rights 
+		reserved.</span>
+	</footer>
+	
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
+	<script src="js/index.js"></script>
+
+</body>
+</html>
