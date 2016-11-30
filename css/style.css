@@ -1,0 +1,520 @@
+body {
+  font-family: "Helvetica", arial, sans-serif;
+  background-color: black;
+  color: rgba(60,60,60, 1);
+  padding: 0;
+  margin: 0;
+}
+
+a, a:hover, a:visited {
+  color: cadetblue;
+  text-decoration: none;
+}
+
+
+header {
+  background:rgba(255,255,255,0.8);
+  width: 100%;
+  max-width: 414px;
+  height: 40px;
+  margin: 0 0 10px 0;
+}
+
+header h2 {
+  text-align: center;
+  color: rgba(80,80,80, 1);
+  border-bottom: 1px solid rgb(32,81,134);
+  margin: 0;
+  font-size: 2.3rem;
+  font-weight: bold;
+  line-height: 40px;
+  box-shadow: 0 2px 5px rgba(100,100,100,0.7);
+}
+
+header h2 > strong {
+  font-family: 'Permanent Marker', cursive;
+  color: cadetblue;
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.appCont {
+   background-image: url("https://static.pexels.com/photos/46106/pexels-photo-46106-large.jpeg");
+  background-size: cover;
+  
+  width: 100%;
+  max-width: 414px;
+  height: calc(-85px + 100vh);
+  min-height: 580px;
+  max-height: 651px;
+  margin: auto;
+  /*border-radius: 0 0 10px 10px;*/
+}
+
+.location {
+  width: 95%;
+  max-width: 390px;
+  margin: 20px auto 5px auto;
+  min-height: 60px;
+  text-align: center;
+  background: rgba(255,255,255,0.8);
+  border-radius: 5px;
+  box-shadow: 0 2px 7px black;
+}
+
+#cityNameCont {
+  font-family: 'Share Tech', sans-serif;
+  font-size: 2.3rem;
+  font-weight: bold;
+  margin:auto;
+  min-height: 60px;
+  
+}
+
+#cityName {
+  margin: 0;
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
+#fallback {
+  font-family: 'Share Tech', sans-serif;
+  font-size: 2.3rem;
+  font-weight: bold;
+  margin: 0 auto;
+}
+
+#cityName > span, #fallback > span {
+ 
+}
+
+.fa-compass.rotate {
+    -webkit-transform: scale(1.5, 1.5);
+            transform: scale(1.5, 1.5);
+  -webkit-transition: 150s linear;
+  transition: 150s linear;
+  -webkit-transform: rotate(36000deg);
+          transform: rotate(36000deg);
+}
+
+
+.locationCont {
+  width: 100%;
+  max-width: 390px;
+  margin-top: -3px;
+}
+
+.gettingPos {
+  line-height: 60px;
+}
+
+#localizer, #fallback {
+  font-size: 2.3rem;
+  font-variant: small-caps;
+  cursor:pointer;
+  
+}
+.fa-compass {
+font-size: 2.3rem;
+  color: cadetblue;
+  cursor:pointer;
+}
+
+/**/
+.box {
+  width: 90%;
+  max-width: 370px;
+  margin: auto 5%;
+}
+
+.search {
+  width: 95%;
+  padding: 5px 40px 5px 15px;
+  
+  height: 44px;
+  line-height: 44px;
+  font-size: 2.3rem;
+  font-variant: small-caps;
+  margin: 8px auto 8px auto;
+  
+  border:none;
+  border-radius: 25px;
+  box-shadow: inset 0 0 5px black;
+  background: rgba(255,255,255,0.6);
+}
+
+.box .icon {
+  margin: auto 20px auto -40px;
+}
+.box .icon i {
+  font-size: 2.3rem;
+  color: cadetblue;
+  cursor:pointer;
+} /**/
+
+#coords {
+  font-size: 14px;
+  text-align: center;
+  line-height: 14px;
+  font-weight: normal;
+}
+
+.weather {
+  width: 95%;
+  max-width: 390px;
+  margin: 5px auto 0 auto;
+  min-height: 50vh;
+  text-align: center;
+  
+}
+
+
+#weatherNow {
+  background: rgba(255,255,255,0.8);
+  box-shadow: 0 2px 7px black;
+  height: 100px;
+  border-radius: 5px;
+  margin: 10px auto 0 auto;
+}
+#weatherNow img {
+  position: relative;
+    float: left;
+  height: 70px;
+   margin: 15px 0 15px 15px;
+ 
+}
+
+#description {
+  height: 50px;
+  padding-top: 10px;
+  line-height: 50px;
+  font-family: 'Share Tech', sans-serif;
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+#nowTime {
+  height: 40px;
+  line-height: 20px;
+  margin:0;
+}
+
+#wind {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  line-height: 45px;
+  
+}
+
+
+#windDirection {
+  line-height: 0;
+  font-size: 18px;
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center;
+}
+
+.forecast img {
+  height: 51px;
+  margin: 0 10px 10px 10px;
+}
+
+.forecast small {
+  position: relative;
+  bottom: 0;
+}
+.time {
+  height: 20px;
+  line-height: 20px;
+  margin:0;
+  font-weight: bold;
+}
+
+.valuesIcon {
+  height: 50px;
+  position: relative;
+  float:left;
+  margin: 5px 0 5px 10px;
+}
+
+.values {
+  font-family: 'Share Tech', sans-serif;
+  font-size: 2.3rem;
+  line-height: 60px;
+  font-weight: bold;
+}
+.forecast {
+  margin: 0 auto;
+}
+.currValue, .forecast {
+  width: 100%;
+  max-width: 390px;
+  clear: both;
+}
+
+.p {
+  width: 48%;
+  float:left;
+  height: 60px;
+  line-height: 60px;
+  background: rgba(255,255,255,0.8);
+  border-radius: 5px;
+  margin-top: 10px;
+  box-shadow: 0 2px 7px black;
+}
+
+.l {
+  float:left;
+  margin-right: 5px;
+}
+
+.r {
+  float:right;
+  margin-left: 5px;
+}
+
+.forecast div {
+  width: 100%;
+  background: rgba(255,255,255,0.8);
+  border-radius: 5px;
+  margin-top: 10px;
+  padding:0;
+  box-shadow: 0 2px 7px black;
+}
+.forecast p {
+  height: 105px;
+  width: 50%;
+  display: inline;
+  float: left;
+  margin: 0;
+}
+
+#tempPlus1, #tempPlus1_2, #tempPlus2, #tempPlus2_2, #tempPlus3, #tempPlus3_2, #tempPlus4, #tempPlus4_2 {
+  font-family: 'Share Tech', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+
+
+.button {
+  height: 55px;
+  padding: 15px;
+  text-align: center;
+  margin-top: 255px;
+}
+
+.button *{
+  cursor: pointer;
+  border:none;
+  margin: 0 5px;
+}
+
+.button * span {
+  font-family: "Helvetica";
+}
+
+
+.btn {
+  color: white;
+}
+
+.btn:hover {
+  color: white;
+  -webkit-transform: scale(1.1,1.1);
+          transform: scale(1.1,1.1);
+}
+
+.fa-info-circle, .fa-info-circle:hover {
+  background: rgb(141, 183, 171);
+  color:black;
+  width: 30px;
+  height: 30px;
+  margin:0 10px 0 0;
+  padding:0;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 28px;
+  line-height: 30px;
+  -webkit-transform: none;
+          transform: none;
+}
+
+#newSearch, #newSearch:hover {
+  color: rgb(141, 183, 171);
+  margin:0 0 0 10px;
+  padding:0;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 30px;
+  line-height: 30px;
+  -webkit-transform: none;
+          transform: none;
+}
+
+.modal-dialog{
+  width: 95%;
+  max-width: 390px;
+  margin: 50px auto;
+} 
+
+.modal-content {
+  background: rgba(255,255,255,0.9);
+  padding: 10px;
+  text-align: left;
+}
+
+.modal-content p {
+  padding: 10px 0;
+}
+
+.modal-content h3 {
+  padding-bottom: 10px;
+  border-bottom: 1px dotted black;
+}
+
+.modal-content span {
+  color: cadetblue;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 1.7rem;
+  font-weight: 500;
+  text-shadow:none;
+}
+
+.modal img {
+  height: 1.7rem;
+}
+
+.modal .btn, .modal .btn:hover {
+  border: none;
+  background: cadetblue;
+ margin-top: -20px;
+}
+
+.modal .btn-danger, .modal .btn-danger:hover {
+  background: darkred;
+}
+
+
+
+footer {
+  height: 28px;
+  line-height: 28px;
+  padding:0;
+  color: white;
+  text-align: center;
+  background: black;
+}
+
+
+
+/*--------TEMP SWITCH BUTTON--------------------*/
+
+ /* The switch - the box around the slider */
+.tempSwitch {
+  position: relative;
+  display: inline-block;
+  width: 68px;
+  height: 32px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {display:none;}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  box-shadow: inset 0 0 6px black;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "°C";
+  height: 24px;
+  width: 28px;
+  line-height: 24px;
+  left: 4px;
+  bottom: 4px;
+  background-color: cadetblue;
+  color: #ccc;
+  box-shadow: 0 0 6px black;
+  font-weight: bold;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+
+
+input:focus + .slider {
+  box-shadow: inset 0 0 6px black;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(22px);
+  transform: translateX(22px);
+  content: "°F";
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 32px;
+  margin: -2px 5px 3px 5px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+#newLocation {
+  margin:auto;
+}
+
+.modal .box,
+.modal .search {
+  width: 100%;
+  margin:0;
+}
+
+
+@media screen and ( min-width : 376px ){ /*for smartphone*/
+  #localizer, #fallback {
+    font-size: 3rem;
+  }
+  
+  .forecast div {
+    width: 89px;
+    height: 215px
+  }
+  
+  .forecast p {
+    float: none;
+  }
+  
+  .fa-compass, .values {
+    font-size: 3rem;
+  }
+  
+  
+  .button {
+    margin-top: 10px;
+  }
+}
