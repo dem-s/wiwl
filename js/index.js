@@ -164,7 +164,7 @@ function loadWeatherInfo(latitude, longitude) {
 	};
    
    
-	$.getJSON("https://crossorigin.me/http://api.openweathermap.org/data/2.5/weather?lat=" + latitude + "&lon=" + longitude + /*"&units=" + units +*/ APPID + new Date().getTime(), function(wdata) {
+	$.getJSON("https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/weather?lat=" + latitude + "&lon=" + longitude + /*"&units=" + units +*/ APPID + new Date().getTime(), function(wdata) {
 	
 		//set time format
 		var optionsDate = {weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'};
@@ -237,7 +237,7 @@ function loadWeatherInfo(latitude, longitude) {
 
 
 		//load 4-days forecast for the searched location
-		$.getJSON("https://crossorigin.me/http://api.openweathermap.org/data/2.5/forecast?q=" + wdata.name + "&mode=JSON&" + APPID + new Date().getTime(), function(fdata) {
+		$.getJSON("https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/forecast?q=" + wdata.name + "&mode=JSON&" + APPID + new Date().getTime(), function(fdata) {
 			var dayPlus1 = fdata.list[1].weather[0].icon;
 			var dayPlus1_2 = fdata.list[5].weather[0].icon;
 
