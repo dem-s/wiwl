@@ -374,7 +374,7 @@ $(".searchCompass").on("click", function searchCity() {
 	var city = $(".search").val();
 	$(".modal").modal("hide");
 	$("#weatherNow").html("<img></img><p id='description'></p><p id='nowTime'></p>");
-	$.getJSON(""https://dl.dropbox.com/s/pjz8rlio0jmos4o/demo_weather.json?dl=0", function(cdata) {
+	$.getJSON("https://dl.dropbox.com/s/pjz8rlio0jmos4o/demo_weather.json?dl=0", function(cdata) {
 		cityLat = cdata.coord.lat;
 		cityLon = cdata.coord.lon;
 		loadWeatherInfo(cityLat, cityLon); //load weather info with ooords of the city
