@@ -164,7 +164,7 @@ function loadWeatherInfo(latitude, longitude) {
 	};
    
    
-	$.getJSON("https://crossorigin.me/http://api.openweathermap.org/data/2.5/weather?lat=" + latitude + "&lon=" + longitude + /*"&units=" + units +*/ APPID + new Date().getTime(), function(wdata) {
+	$.getJSON(""https://dl.dropbox.com/s/pjz8rlio0jmos4o/demo_weather.json?dl=0", function(wdata) {
 	
 		//set time format
 		var optionsDate = {weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'};
@@ -237,7 +237,7 @@ function loadWeatherInfo(latitude, longitude) {
 
 
 		//load 4-days forecast for the searched location
-		$.getJSON("https://crossorigin.me/http://api.openweathermap.org/data/2.5/forecast?q=" + wdata.name + "&mode=JSON&" + APPID + new Date().getTime(), function(fdata) {
+		$.getJSON("https://dl.dropbox.com/s/opq52hx7z4nlb7v/demo_forecast.json?dl=0", function(fdata) {
 			var dayPlus1 = fdata.list[1].weather[0].icon;
 			var dayPlus1_2 = fdata.list[5].weather[0].icon;
 
@@ -374,7 +374,7 @@ $(".searchCompass").on("click", function searchCity() {
 	var city = $(".search").val();
 	$(".modal").modal("hide");
 	$("#weatherNow").html("<img></img><p id='description'></p><p id='nowTime'></p>");
-	$.getJSON("https://crossorigin.me/http://api.openweathermap.org/data/2.5/weather?q=" + city + "&APPID=e00e2c00f684de6546a4a9dc3efcf530&" + new Date().getTime(), function(cdata) {
+	$.getJSON(""https://dl.dropbox.com/s/pjz8rlio0jmos4o/demo_weather.json?dl=0", function(cdata) {
 		cityLat = cdata.coord.lat;
 		cityLon = cdata.coord.lon;
 		loadWeatherInfo(cityLat, cityLon); //load weather info with ooords of the city
