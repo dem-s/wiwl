@@ -164,7 +164,7 @@ function loadWeatherInfo(latitude, longitude) {
 	};
    
    
-	$.getJSON(""https://dl.dropbox.com/s/pjz8rlio0jmos4o/demo_weather.json?dl=0", function(wdata) {
+	$.getJSON("https://dl.dropbox.com/s/pjz8rlio0jmos4o/demo_weather.json?dl=0", function(wdata) {
 	
 		//set time format
 		var optionsDate = {weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'};
